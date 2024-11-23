@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="profile-section">
+                <img src="images/nursingresume.jpg" alt="Your Photo" class="profile-pic">
+                <div class="profile-details">
+                    <h1>Betyy mukami</h1>
+                    <p class="subtitle">Nurse passionate about integrating technology in nursing care</p>
+                    <p class="description">
+                        I aim to improve the quality of nursing care by leveraging technology to reach more people through health education, enhancing their decision-making regarding health. I am particularly interested in providing preconception care to hypertensive and diabetic clients to improve health outcomes.
+                    </p>
+                </div>
+            </div>
+            <nav class="button-container">
+                <button onclick="navigateTo('resume')">Resume</button>
+                <button onclick="navigateTo('research')">Research</button>
+                <button onclick="navigateTo('education')">Health Education</button>
+                <button onclick="navigateTo('personal')">Personal</button>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content container">
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
+    <script>
+        function navigateTo(resume) {
+            window.location.href = `${resume}.html`;
+        }
+    </script>
+    <script>
+        function navigateTo(research) {
+            window.location.href = `${research}.html`;
+        }
+    </script>
+    <script>
+        function navigateTo(education) {
+            window.location.href = `${education}.html`;
+        }
+    </script>
+    <script>
+        function navigateTo(personal) {
+            window.location.href = `${personal}.html`;
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
